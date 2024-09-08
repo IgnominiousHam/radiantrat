@@ -1,0 +1,11 @@
+[Unit]
+Description=Send current position to RadiantRat hub
+Before=network.target
+
+[Service]
+ExecStart=bash /usr/local/bin/ratnode.sh
+RemainAfterExit=yes
+User=root
+
+[Install]
+WantedBy=multi-user.target
