@@ -20,6 +20,8 @@ To get started with RadiantRat, follow these instructions:
    ```
 
 2. **Configure Device:**
+   
+   If using as node, ensure that hub IP in ratnode.sh is correct.
 
    Run ratsetup.sh to configure your device as a node (device doing the detecting) or hub (device seeing and mapping the nodes):
 
