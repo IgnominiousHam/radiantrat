@@ -26,6 +26,7 @@ To get started with RadiantRat, follow these instructions:
    ```bash
    sudo bash ratsetup.sh
    ```
+   The rat currently assumes that Kismet and ssh credentials all match the following format: username = kali, password = kali. If you haven't set up Kismet, be sure to visit port 2501 after starting capture to set the proper credentials. We're working on making this more dynamic.
 
 3. **Start Ratting:**
 
