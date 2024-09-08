@@ -11,7 +11,6 @@ echo $gps_data
     if [ -n "$gps_data" ]; then
         lat=$(echo $gps_data | awk -F' ' '{ print $1 }')
         lon=$(echo $gps_data | awk -F' ' '{ print $2 }')
-        # Send data to server
         curl -X POST "$SERVER_URL" \
              -H "Content-Type: application/json" \
              -d "{\"latitude\": \"$lat\", \"longitude\": \"$lon\"}"
